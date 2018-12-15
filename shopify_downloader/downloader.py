@@ -27,8 +27,11 @@ def download_data():
 
 def download_data_sets():
     """Downloads the datasets"""
+    """
     for resource in [shopify.Customer, shopify.Product, shopify.Order]:
         download_shopify_resource(resource)
+    """
+    download_shopify_resource(shopify.Product)
 
 
 def download_shopify_resource(shopify_resource: ShopifyResource):
