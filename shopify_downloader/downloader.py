@@ -31,7 +31,7 @@ def download_data_sets():
     for resource in [shopify.Customer, shopify.Product, shopify.Order]:
         download_shopify_resource(resource)
     """
-    download_shopify_resource(shopify.Product)
+    download_shopify_resource(shopify.Order)
 
 def download_shopify_resource(shopify_resource: ShopifyResource):
     """Downloads data for a single Shopify resource
